@@ -2536,6 +2536,10 @@ body.lock {
     display: none;
   }
 
+  .hero__body:before {
+    display: none;
+  }
+
   .hero__start {
     font-weight: 700;
     margin: 0px 0px 25px 0px;

@@ -274,11 +274,3 @@ leaves.forEach(leaf => {
 })
 
 })
-window.addEventListener('load', () => {
-   const hidePreloader = () => {
-      const preloader = document.querySelector('.preloader')
-      preloader.classList.remove('active')
-      document.body.classList.remove('lock')
-   }
-   hidePreloader()
-})

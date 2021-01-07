@@ -509,28 +509,29 @@ body.lock {
   position: absolute;
   width: 100%;
   height: 44px;
+  top: -44px;
   left: 0;
   background-color: #ffffff;
-  -webkit-animation: move 1.1s ease 0.3s infinite both;
-          animation: move 1.1s ease 0.3s infinite both;
+  -webkit-animation: moveScroll 1.1s ease 0.3s infinite both;
+          animation: moveScroll 1.1s ease 0.3s infinite both;
 }
 
-@-webkit-keyframes move {
-  from {
+@-webkit-keyframes moveScroll {
+  0% {
     top: -44px;
   }
 
-  to {
+  100% {
     top: 100%;
   }
 }
 
-@keyframes move {
-  from {
+@keyframes moveScroll {
+  0% {
     top: -44px;
   }
 
-  to {
+  100% {
     top: 100%;
   }
 }
@@ -1011,6 +1012,24 @@ body.lock {
   width: 20px;
   -webkit-animation: move 0.7s ease 0.2s infinite alternate forwards;
           animation: move 0.7s ease 0.2s infinite alternate forwards;
+}
+
+@-webkit-keyframes move {
+  from {
+    transform: translate3d(0px, -3px, 0px);
+    -webkit-transform: translate3d(0px, -3px, 0px);
+    -ms-transform: translate3d(0px, -3px, 0px);
+    -o-transform: translate3d(0px, -3px, 0px);
+    -moz-transform: translate3d(0px, -3px, 0px);
+  }
+
+  to {
+    transform: translate3d(0px, 5px, 0px);
+    -webkit-transform: translate3d(0px, 5px, 0px);
+    -ms-transform: translate3d(0px, 5px, 0px);
+    -o-transform: translate3d(0px, 5px, 0px);
+    -moz-transform: translate3d(0px, 5px, 0px);
+  }
 }
 
 @keyframes move {
@@ -1849,12 +1868,17 @@ body.lock {
 
 @media (min-width: 767.98px) {
   .btn:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     transform: translate3d(0px, -5px, 0px);
     -webkit-transform: translate3d(0px, -5px, 0px);
     -ms-transform: translate3d(0px, -5px, 0px);
     -o-transform: translate3d(0px, -5px, 0px);
     -moz-transform: translate3d(0px, -5px, 0px);
+  }
+
+  .play__btn:hover {
+    -webkit-filter: drop-shadow(0 12px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0 12px rgba(0, 0, 0, 0.15));
   }
 
   .up:hover {
@@ -1891,6 +1915,16 @@ body.lock {
     -ms-transform: translate3d(-110px, 0px, 0px);
     -o-transform: translate3d(-110px, 0px, 0px);
     -moz-transform: translate3d(-110px, 0px, 0px);
+  }
+
+  .play__btn:hover {
+    transform: translate3d(-110px, -10px, 0px);
+    -webkit-transform: translate3d(-110px, -10px, 0px);
+    -ms-transform: translate3d(-110px, -10px, 0px);
+    -o-transform: translate3d(-110px, -10px, 0px);
+    -moz-transform: translate3d(-110px, -10px, 0px);
+    -webkit-filter: drop-shadow(0 12px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0 12px rgba(0, 0, 0, 0.15));
   }
 
   .info__dots {

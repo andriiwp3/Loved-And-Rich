@@ -7,7 +7,7 @@
       <link rel="shortcut icon" href="favicon.ico" />
       <link rel="stylesheet" href="./css/style.min.css" />
    </head>
-   <body>
+   <body class="lock">
       <!-- Google Tag Manager -->
       <script>
          ;(function (w, d, s, l, i) {
@@ -23,8 +23,11 @@
       </script>
       <!-- End Google Tag Manager -->
       <div class="wrapper">
+			<div class="preloader active">
+				<p class="preloader__title title">Любимая и Богатая</p>
+			</div>
          <main class="main">
-            <section class="hero">
+            <section class="hero _anim-items">
                <div class="hero__container container">
                   <div class="hero__logo">
                      <img src="img/logo.png" alt="Любимая и Богатая" />
@@ -42,9 +45,13 @@
                            на 3-х дневном онлайн мастер-классе Татьяны
                            Богомоловой
                         </p>
-                        <a href="#atadress" class="hero__btn btn btn_white goto"
-                           >Подробнее</a
-                        >
+                        <div class="hero__btn-wrap">
+                           <a
+                              href="#atadress"
+                              class="hero__btn btn btn_white goto"
+                              >Подробнее</a
+                           >
+                        </div>
                      </div>
                   </div>
                </div>
@@ -55,7 +62,7 @@
             </section>
             <section class="atadress">
                <div class="atadress__container container">
-                  <div class="atadress__inner double">
+                  <div class="atadress__inner double _anim-items">
                      <div class="atadress__body double__body">
                         <h3 class="atadress__title title title_line">
                            Вы точно пришли по адресу, если:
@@ -130,10 +137,15 @@
                      </div>
                   </div>
                </div>
+               <div class="atadress__leaves leaves-atadress leaves">
+                  <div class="leaves-atadress__leaf" data-depth="0.5">
+                     <img src="./img/atadress/leaves.png" alt="leaf" />
+                  </div>
+               </div>
             </section>
             <section class="want">
                <div class="want__container container">
-                  <div class="want__inner double">
+                  <div class="want__inner double _anim-items">
                      <div class="want__body double__body">
                         <h3 class="want__title title title_line">
                            Но очень хотите
@@ -199,13 +211,18 @@
                      </div>
                   </div>
                </div>
+               <div class="want__leaves leaves-want leaves">
+                  <div class="leaves-want__leaf" data-depth="0.7">
+                     <img src="./img/want/leaves.png" alt="leaf" />
+                  </div>
+               </div>
             </section>
             <section class="program">
                <div class="program__container container">
                   <h3 class="program__title title title_line">
                      За три дня мастер-класса вы:
                   </h3>
-                  <div class="program__items">
+                  <div class="program__items _anim-items">
                      <div class="program__item item-program">
                         <div class="item-program__num">01</div>
                         <p class="item-program__desc desc desc_medium">
@@ -237,7 +254,7 @@
                </div>
             </section>
             <section class="travel">
-               <div class="travel__container container">
+               <div class="travel__container container _anim-items _anim-half">
                   <div class="travel__img">
                      <img src="./img/travel/girl-in-plane.png" alt="" />
                   </div>
@@ -253,7 +270,7 @@
                   </p>
                   <a href="#" class="travel__btn btn goto">Забронировать</a>
                </div>
-               <div class="travel__images images-travel">
+               <div class="travel__images images-travel _anim-items _anim-half">
                   <div class="images-travel__img images-travel__img_1">
                      <img
                         src="./img/travel/girl-eating.png"
@@ -274,6 +291,16 @@
                         src="./img/travel/car.png"
                         alt="girl driving an expensive car"
                      />
+                  </div>
+               </div>
+               <div class="travel__leaves leaves-travel leaves-travel_1 leaves">
+                  <div class="leaves-travel__leaf" data-depth="0.7">
+                     <img src="./img/travel/leaves_1.png" alt="leaf" />
+                  </div>
+               </div>
+               <div class="travel__leaves leaves-travel leaves-travel_2 leaves">
+                  <div class="leaves-travel__leaf" data-depth="0.2">
+                     <img src="./img/travel/leaves_2.png" alt="leaf" />
                   </div>
                </div>
             </section>
@@ -323,7 +350,7 @@
                </div>
             </section>
             <section class="author">
-               <div class="author__container container">
+               <div class="author__container container _anim-items">
                   <p class="author__suptitle subtitle subtitle_small">
                      Не огорчайтесь, если ваши ожидания не совпадут с
                      результатами теста.
@@ -341,7 +368,7 @@
 
                   <p class="author__tag">Потому что</p>
                   <p class="author__subtitle">этот мастер – класс проводит</p>
-                  <div class="author__card card-author">
+                  <div class="author__card card-author _anim-items">
                      <div class="card-author__img">
                         <img src="./img/author/tatyana.png" alt="" />
                      </div>
@@ -352,6 +379,11 @@
                            жизненных кризисов и женскому магнетизму.
                         </p>
                      </div>
+                  </div>
+               </div>
+               <div class="author__leaves leaves-author leaves">
+                  <div class="leaves-author__leaf" data-depth="0.2">
+                     <img src="./img/author/leaves.png" alt="leaf" />
                   </div>
                </div>
             </section>
@@ -432,13 +464,18 @@
                      </div>
                   </div>
                </div>
+               <div class="about__leaves leaves-about leaves">
+                  <div class="leaves-about__leaf" data-depth="0.9">
+                     <img src="./img/about/leaves.png" alt="leaf" />
+                  </div>
+               </div>
             </section>
             <section class="after">
                <div class="after__container container">
                   <h3 class="after__title title title_line">
                      После мастер-класса Татьяны вы:
                   </h3>
-                  <div class="after__items">
+                  <div class="after__items _anim-items">
                      <div class="after__item item-after">
                         <span class="item-after__num">1.</span>
                         <p class="item-after__desc">
@@ -452,6 +489,11 @@
                            мечтать.
                         </p>
                      </div>
+                  </div>
+               </div>
+               <div class="after__leaves leaves-after leaves">
+                  <div class="leaves-after__leaf" data-depth="0.7">
+                     <img src="./img/after/leaves.png" alt="leaf" />
                   </div>
                </div>
             </section>
@@ -481,10 +523,15 @@
                      </div>
                   </div>
                </div>
+               <div class="present__leaves leaves-present leaves">
+                  <div class="leaves-present__leaf" data-depth="0.2">
+                     <img src="./img/after/leaves.png" alt="leaf" />
+                  </div>
+               </div>
             </section>
             <section class="if">
                <div class="if__container container">
-                  <div class="if__inner double">
+                  <div class="if__inner double _anim-items">
                      <div class="if__body double__body">
                         <span class="if__tag">Приходите на мастер-класс!</span>
                         <h3 class="if__title title title_line">
@@ -576,7 +623,7 @@
                   <h3 class="info__title title title_line">
                      Формат и стоимость обучения
                   </h3>
-                  <div class="info__items">
+                  <div class="info__items _anim-items">
                      <div class="info__item item-info">
                         <div class="item-info__header">
                            <div class="item-info__img">
@@ -711,6 +758,11 @@
                </div>
                <div class="info__dots"></div>
                <a href="#" class="info__btn btn">Участвовать за 500 руб.</a>
+               <div class="info__leaves leaves-info leaves">
+                  <div class="leaves-info__leaf" data-depth="0.5">
+                     <img src="./img/info/leaves.png" alt="leaf" />
+                  </div>
+               </div>
             </section>
             <section class="faq">
                <div class="faq__container container">
@@ -792,6 +844,11 @@
                      </div>
                   </div>
                </div>
+               <div class="faq__leaves leaves-faq leaves">
+                  <div class="leaves-faq__leaf" data-depth="0.2">
+                     <img src="./img/faq/leaves.png" alt="leaf" />
+                  </div>
+               </div>
             </section>
             <section class="offer">
                <div class="offer__container container">
@@ -805,16 +862,21 @@
                   <a href="#" class="offer__btn btn">
                      Участвовать за 500 руб.
                   </a>
-                  <div class="offer__picture">
+                  <div class="offer__picture _anim-items">
                      <img src="./img/offer/car.png" alt="expensive car" />
                   </div>
                </div>
-               <div class="offer__images">
+               <div class="offer__images _anim-items _anim-all">
                   <div class="offer__img offer__img_1">
                      <img src="./img/offer/car.png" alt="expensive car" />
                   </div>
                   <div class="offer__img offer__img_2">
                      <img src="./img/offer/plane.png" alt="plane" />
+                  </div>
+               </div>
+               <div class="offer__leaves leaves-offer leaves">
+                  <div class="leaves-offer__leaf" data-depth="0.7">
+                     <img src="./img/offer/leaves.png" alt="leaf" />
                   </div>
                </div>
             </section>
@@ -860,6 +922,7 @@
 
       </div>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 <script src="js/main.min.js"></script>
 
    </body>
